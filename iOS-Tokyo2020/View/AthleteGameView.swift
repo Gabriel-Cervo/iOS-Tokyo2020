@@ -19,19 +19,18 @@ struct AthleteGameView: View {
             
             HStack {
                 AthleteMiniPreview()
-                    .padding(.trailing)
                 
                 Text("X")
-                    .padding(.trailing)
+                    .padding(10)
                 
                 AthleteMiniPreview()
             }
         }
-        .frame(width: 200, height: 150, alignment: .center)
+        .frame(width: 140, height: 100, alignment: .center)
+        .padding(25)
         .background(Color.init(red: 240.0, green: 240.0, blue: 240.0))
-        .padding(15)
         .cornerRadius(14)
-        .shadow(radius: 4)
+        .shadow(radius: 5)
     }
 }
 

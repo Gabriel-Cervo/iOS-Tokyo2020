@@ -17,7 +17,7 @@ struct SportView: View {
                     
                     VStack {
                         HStack(spacing: 20) {
-                            CustomFont(text: "Featured Athletes", fontSize: 17, fontWeight: .heavy)
+                            CustomFont(text: "Featured Athletes", fontSize: 20, fontWeight: .heavy)
                             
                             Spacer()
                             
@@ -40,21 +40,34 @@ struct SportView: View {
                     
                     VStack(alignment: .leading) {
                         HStack {
-                            CustomFont(text: "Next Games", fontSize: 17, fontWeight: .heavy)
-                                Spacer()
+                            CustomFont(text: "Next Games", fontSize: 20, fontWeight: .heavy)
+                                
+                            Spacer()
                         }
                         
                         ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 25) {
+                            HStack(spacing: 10) {
                                 AthleteGameView()
                                 AthleteGameView()
                                 AthleteGameView()
                             }
-                            .padding()
                         }
                     }
-                    .padding(.top, 40)
+                    .padding(.top, 30)
                     
+                    VStack(alignment: .leading) {
+                        HStack {
+                            CustomFont(text: "Results", fontSize: 20, fontWeight: .heavy)
+                                
+                            Spacer()
+                        }
+                        
+                        HStack(spacing: 20) {
+                            ResultsView()
+                            ResultsView()
+                        }
+                    }
+                    .padding(.top, 15)
                 }
                 .padding(20)
             }

@@ -13,6 +13,7 @@
 		8442E0EF26126F2900F14374 /* AthleteGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442E0EE26126F2900F14374 /* AthleteGameView.swift */; };
 		8442E0F226126FFE00F14374 /* AthleteMiniPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442E0F126126FFE00F14374 /* AthleteMiniPreview.swift */; };
 		8442E0F52612706800F14374 /* AthletePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442E0F42612706800F14374 /* AthletePreview.swift */; };
+		849A661426129506002E1782 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A661326129506002E1782 /* ResultsView.swift */; };
 		84E2023326124973004B709C /* iOS_Tokyo2020App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2023226124973004B709C /* iOS_Tokyo2020App.swift */; };
 		84E2023526124973004B709C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2023426124973004B709C /* ContentView.swift */; };
 		84E2023726124974004B709C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E2023626124974004B709C /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		8442E0EE26126F2900F14374 /* AthleteGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteGameView.swift; sourceTree = "<group>"; };
 		8442E0F126126FFE00F14374 /* AthleteMiniPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteMiniPreview.swift; sourceTree = "<group>"; };
 		8442E0F42612706800F14374 /* AthletePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletePreview.swift; sourceTree = "<group>"; };
+		849A661326129506002E1782 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		84E2022F26124973004B709C /* iOS-Tokyo2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Tokyo2020.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E2023226124973004B709C /* iOS_Tokyo2020App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Tokyo2020App.swift; sourceTree = "<group>"; };
 		84E2023426124973004B709C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				8442E0EE26126F2900F14374 /* AthleteGameView.swift */,
 				8442E0F126126FFE00F14374 /* AthleteMiniPreview.swift */,
 				8442E0F42612706800F14374 /* AthletePreview.swift */,
+				849A661326129506002E1782 /* ResultsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				84E20258261252C5004B709C /* Medal.swift in Sources */,
 				84E2024726124EB4004B709C /* Athlete.swift in Sources */,
 				8442E0D6261264E500F14374 /* SportView.swift in Sources */,
+				849A661426129506002E1782 /* ResultsView.swift in Sources */,
 				84E20261261259FA004B709C /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
