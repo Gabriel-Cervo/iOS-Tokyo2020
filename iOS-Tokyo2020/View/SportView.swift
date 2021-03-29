@@ -10,32 +10,53 @@ import SwiftUI
 struct SportView: View {
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading) {
+            VStack {
                 SportImageView(image: Image("1200px-Flag_of_the_Czech_Republic.svg"))
                 
                 VStack {
-                    HStack {
-                        Text("Featured Athletes")
-                            .font(.custom("SF Compact Display", size: 17))
-                            .fontWeight(.heavy)
-                        Spacer()
-                        Text("See all")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                    }
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
-                            FeaturedAthletes()
-                            FeaturedAthletes()
-                            FeaturedAthletes()
-                            FeaturedAthletes()
-                            FeaturedAthletes()
+                    
+                    VStack {
+                        HStack(spacing: 20) {
+                            CustomFont(text: "Featured Athletes", fontSize: 17, fontWeight: .heavy)
+                            
+                            Spacer()
+                            
+                            Text("See all")
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack {
+                                AthletePreview()
+                                AthletePreview()
+                                AthletePreview()
+                                AthletePreview()
+                                AthletePreview()
 
+                            }
                         }
                     }
+                    .padding(.top, 60)
+                    
+                    VStack(alignment: .leading) {
+                        HStack {
+                            CustomFont(text: "Next Games", fontSize: 17, fontWeight: .heavy)
+                                Spacer()
+                        }
+                        
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 25) {
+                                AthleteGameView()
+                                AthleteGameView()
+                                AthleteGameView()
+                            }
+                            .padding()
+                        }
+                    }
+                    .padding(.top, 40)
+                    
                 }
                 .padding(20)
-                .padding(.top, 60)
             }
         }
     }

@@ -1,5 +1,5 @@
 //
-//  FeaturedAthletes.swift
+//  AthletePreview.swift
 //  iOS-Tokyo2020
 //
 //  Created by Joao Gabriel Dourado Cervo on 29/03/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FeaturedAthletes: View {
+struct AthletePreview: View {
     var body: some View {
         VStack {
             CircleImage(image: Image("x4dwqfx5lne6cg78jkw3"), height: 80, width: 80)
@@ -22,15 +22,14 @@ struct FeaturedAthletes: View {
                     .frame(width: 20, height: 14)
                     .padding(.trailing, -5)
                 
-                Text("GBR")
-                    .font(.custom("SF Compact Display", size: 11))
+                CustomFont(text: "GBR", fontSize: 11)
             }
         }
     }
 }
 
-struct FeaturedAthletes_Previews: PreviewProvider {
+struct AthletePreview_Previews: PreviewProvider {
     static var previews: some View {
-        FeaturedAthletes()
+        AthletePreview()
     }
 }
