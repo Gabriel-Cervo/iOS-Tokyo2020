@@ -17,6 +17,7 @@
 		84E20255261251BF004B709C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E20254261251BF004B709C /* Game.swift */; };
 		84E20258261252C5004B709C /* Medal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E20257261252C5004B709C /* Medal.swift */; };
 		84E2025B2612533B004B709C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2025A2612533B004B709C /* News.swift */; };
+		84E2025E261256E0004B709C /* Olympic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2025D261256E0004B709C /* Olympic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		84E20254261251BF004B709C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		84E20257261252C5004B709C /* Medal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medal.swift; sourceTree = "<group>"; };
 		84E2025A2612533B004B709C /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		84E2025D261256E0004B709C /* Olympic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olympic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				84E20254261251BF004B709C /* Game.swift */,
 				84E20257261252C5004B709C /* Medal.swift */,
 				84E2025A2612533B004B709C /* News.swift */,
+				84E2025D261256E0004B709C /* Olympic.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				84E20255261251BF004B709C /* Game.swift in Sources */,
 				84E2025B2612533B004B709C /* News.swift in Sources */,
 				84E2023326124973004B709C /* iOS_Tokyo2020App.swift in Sources */,
+				84E2025E261256E0004B709C /* Olympic.swift in Sources */,
 				84E2024A26124F94004B709C /* Sport.swift in Sources */,
 				84E2024E26125033004B709C /* Team.swift in Sources */,
 				84E20258261252C5004B709C /* Medal.swift in Sources */,

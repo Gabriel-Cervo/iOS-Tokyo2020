@@ -10,7 +10,7 @@ import SwiftUI
 
 struct Athlete {
     let name: String
-    let yearsParticipated: Int
+    let yearsParticipated: Olympic
     let sport: Sport
     let team: Team
     let modalities: [String]

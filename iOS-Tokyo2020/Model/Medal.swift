@@ -16,5 +16,5 @@ enum MedalType {
 struct Medal {
     let type: MedalType
     let quantity: Int
-    let year: Int
+    let year: Olympic
 }
