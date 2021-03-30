@@ -14,7 +14,6 @@ struct SportView: View {
                 SportImageView(image: Image("1200px-Flag_of_the_Czech_Republic.svg"))
                 
                 VStack {
-                    
                     VStack {
                         HStack(spacing: 20) {
                             CustomFont(text: "Featured Athletes", fontSize: 20, fontWeight: .heavy)
@@ -50,7 +49,10 @@ struct SportView: View {
                                 AthleteGameView()
                                 AthleteGameView()
                                 AthleteGameView()
+                                AthleteGameView()
+
                             }
+                            .padding(2)
                         }
                     }
                     .padding(.top, 30)

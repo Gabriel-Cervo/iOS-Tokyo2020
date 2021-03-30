@@ -19,10 +19,10 @@ struct ResultsView: View {
                 Text("Medal")
             }
         }
-        .frame(width: 130, height: 100, alignment: .center)
+        .frame(width: 140, height: 100, alignment: .center)
         .padding(25)
         .background(Color.init(red: 240.0, green: 240.0, blue: 240.0))
-        .cornerRadius(14)
+        .cornerRadius(20)
         .shadow(radius: 5)
     }
 }
