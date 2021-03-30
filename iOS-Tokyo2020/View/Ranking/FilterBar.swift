@@ -17,17 +17,38 @@ enum FilterOptions: String {
 
 struct FilterBar: View {
     @Binding var activeFilter: FilterOptions
+    
+    var rectangleOffsets: [FilterOptions: Int] = [.Athletes: -135, .Ranking : -70, .Sports: -8, .Teams: 45, .Sponsorship: 120]
+    
     var onButtonClick: (_ buttonTitle: String) -> Void
+    
+    let gradientColors: [Color] = [
+        Color(red: 32 / 255, green: 43 / 255, blue: 90 / 255),
+        Color(red: 58 / 255, green: 127 / 255, blue: 202 / 255),
+        Color(red: 46 / 255, green: 170 / 255, blue: 70 / 255),
+        Color(red: 248 / 255, green: 169 / 255, blue: 29 / 255),
+        Color(red: 237 / 255, green: 30 / 255, blue: 74 / 255)
+    ]
     
     var body: some View {
         ScrollView(.horizontal) {
-            HStack(spacing: 15) {
-                FilterButton(selectedFilter: $activeFilter, title: "Athletes", onClick: onButtonClick)
-                FilterButton(selectedFilter: $activeFilter, title: "Ranking", onClick: onButtonClick)
-                FilterButton(selectedFilter: $activeFilter, title: "Sports", onClick: onButtonClick)
-                FilterButton(selectedFilter: $activeFilter, title: "Teams", onClick: onButtonClick)
-                FilterButton(selectedFilter: $activeFilter, title: "Sponsorship", onClick: onButtonClick)
+            VStack {
+                HStack(spacing: 15) {
+                    FilterButton(title: "Athletes", onClick: onButtonClick)
+                    FilterButton(title: "Ranking", onClick: onButtonClick)
+                    FilterButton(title: "Sports", onClick: onButtonClick)
+                    FilterButton(title: "Teams", onClick: onButtonClick)
+                    FilterButton(title: "Sponsorship", onClick: onButtonClick)
+                }
+                
+                Rectangle()
+                    .frame(width: 52, height: 3)
+                    .foregroundColor(.clear)
+                    .background(LinearGradient(gradient: Gradient(colors: gradientColors), startPoint: .leading, endPoint: .trailing))
+                    .offset(x: CGFloat(rectangleOffsets[activeFilter]!))
+                    .animation(.easeIn(duration: 0.25))
             }
+            
         }
     }
 }
