@@ -21,6 +21,8 @@
 		849A662626139AC2002E1782 /* BackgroundRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A662526139AC2002E1782 /* BackgroundRectangle.swift */; };
 		849A662B26139D40002E1782 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A662A26139D40002E1782 /* RankingView.swift */; };
 		849A662F26139DAF002E1782 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A662E26139DAF002E1782 /* SearchBar.swift */; };
+		849A66322613A0DF002E1782 /* FilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A66312613A0DF002E1782 /* FilterBar.swift */; };
+		849A66352613A16A002E1782 /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A66342613A16A002E1782 /* FilterButton.swift */; };
 		84E2023326124973004B709C /* iOS_Tokyo2020App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2023226124973004B709C /* iOS_Tokyo2020App.swift */; };
 		84E2023526124973004B709C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2023426124973004B709C /* ContentView.swift */; };
 		84E2023726124974004B709C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E2023626124974004B709C /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		849A662526139AC2002E1782 /* BackgroundRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundRectangle.swift; sourceTree = "<group>"; };
 		849A662A26139D40002E1782 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
 		849A662E26139DAF002E1782 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		849A66312613A0DF002E1782 /* FilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterBar.swift; sourceTree = "<group>"; };
+		849A66342613A16A002E1782 /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		84E2022F26124973004B709C /* iOS-Tokyo2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Tokyo2020.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E2023226124973004B709C /* iOS_Tokyo2020App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Tokyo2020App.swift; sourceTree = "<group>"; };
 		84E2023426124973004B709C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 			children = (
 				849A662A26139D40002E1782 /* RankingView.swift */,
 				849A662E26139DAF002E1782 /* SearchBar.swift */,
+				849A66312613A0DF002E1782 /* FilterBar.swift */,
+				849A66342613A16A002E1782 /* FilterButton.swift */,
 			);
 			path = Ranking;
 			sourceTree = "<group>";
@@ -258,10 +264,12 @@
 				849A662B26139D40002E1782 /* RankingView.swift in Sources */,
 				849A662626139AC2002E1782 /* BackgroundRectangle.swift in Sources */,
 				849A662F26139DAF002E1782 /* SearchBar.swift in Sources */,
+				849A66322613A0DF002E1782 /* FilterBar.swift in Sources */,
 				849A661F26133A17002E1782 /* SportResults.swift in Sources */,
 				84E2023326124973004B709C /* iOS_Tokyo2020App.swift in Sources */,
 				84E2025E261256E0004B709C /* Olympic.swift in Sources */,
 				849A662226133A7E002E1782 /* SportDetailsContent.swift in Sources */,
+				849A66352613A16A002E1782 /* FilterButton.swift in Sources */,
 				8442E0DD2612667A00F14374 /* SportImageView.swift in Sources */,
 				849A6619261339AE002E1782 /* FeaturedAthletesView.swift in Sources */,
 				84E2024A26124F94004B709C /* Sport.swift in Sources */,

@@ -9,11 +9,20 @@ import SwiftUI
 
 struct RankingView: View {
     @State var searchText: String = ""
+    @State var activeFilter: FilterOptions = .Athletes
+    
+    func onButtonClick(_ buttonTitle: String) {
+        activeFilter = FilterOptions.init(rawValue: buttonTitle)!
+    }
     
     var body: some View {
         ScrollView {
             VStack {
                 SearchBar(text: $searchText)
+                
+                FilterBar(activeFilter: $activeFilter, onButtonClick: onButtonClick)
+                    .padding()
+                    .padding(.leading, 20)
             }
             .padding()
         }

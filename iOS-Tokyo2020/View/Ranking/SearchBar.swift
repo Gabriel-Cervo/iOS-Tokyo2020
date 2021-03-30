@@ -12,14 +12,14 @@ struct SearchBar: View {
     
     var body: some View {
         ZStack {
-            BackgroundRectangle(width: 304, height: 32, color: Color(red: 240 / 255, green: 240 / 255, blue: 240 / 255))
+            BackgroundRectangle(width: 324, height: 32, color: Color(red: 240 / 255, green: 240 / 255, blue: 240 / 255))
             
             HStack {
                 Image(systemName: "magnifyingglass")
                 
                 TextField("", text: $text)
             }
-            .frame(width: 280, height: 30)
+            .frame(width: 300, height: 30)
         }
     }
 }
