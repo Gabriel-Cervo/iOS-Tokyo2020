@@ -23,6 +23,9 @@ struct RankingView: View {
                 FilterBar(activeFilter: $activeFilter, onButtonClick: onButtonClick)
                     .padding()
                     .padding(.leading, 20)
+                
+                AthleteRankingRow()
+                    .padding(.top, 10)
             }
             .padding()
         }
