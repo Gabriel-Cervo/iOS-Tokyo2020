@@ -18,6 +18,7 @@
 		849A661C261339E1002E1782 /* NextGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A661B261339E1002E1782 /* NextGames.swift */; };
 		849A661F26133A17002E1782 /* SportResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A661E26133A17002E1782 /* SportResults.swift */; };
 		849A662226133A7E002E1782 /* SportDetailsContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A662126133A7E002E1782 /* SportDetailsContent.swift */; };
+		849A662626139AC2002E1782 /* BackgroundRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A662526139AC2002E1782 /* BackgroundRectangle.swift */; };
 		84E2023326124973004B709C /* iOS_Tokyo2020App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2023226124973004B709C /* iOS_Tokyo2020App.swift */; };
 		84E2023526124973004B709C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2023426124973004B709C /* ContentView.swift */; };
 		84E2023726124974004B709C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E2023626124974004B709C /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		849A661B261339E1002E1782 /* NextGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGames.swift; sourceTree = "<group>"; };
 		849A661E26133A17002E1782 /* SportResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportResults.swift; sourceTree = "<group>"; };
 		849A662126133A7E002E1782 /* SportDetailsContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportDetailsContent.swift; sourceTree = "<group>"; };
+		849A662526139AC2002E1782 /* BackgroundRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundRectangle.swift; sourceTree = "<group>"; };
 		84E2022F26124973004B709C /* iOS-Tokyo2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Tokyo2020.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E2023226124973004B709C /* iOS_Tokyo2020App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Tokyo2020App.swift; sourceTree = "<group>"; };
 		84E2023426124973004B709C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				84E20260261259FA004B709C /* CircleImage.swift */,
+				849A662526139AC2002E1782 /* BackgroundRectangle.swift */,
 				849A66162613390F002E1782 /* SportDetails */,
 			);
 			path = View;
@@ -238,6 +241,7 @@
 				84E2023526124973004B709C /* ContentView.swift in Sources */,
 				84E20255261251BF004B709C /* Game.swift in Sources */,
 				84E2025B2612533B004B709C /* News.swift in Sources */,
+				849A662626139AC2002E1782 /* BackgroundRectangle.swift in Sources */,
 				849A661F26133A17002E1782 /* SportResults.swift in Sources */,
 				84E2023326124973004B709C /* iOS_Tokyo2020App.swift in Sources */,
 				84E2025E261256E0004B709C /* Olympic.swift in Sources */,

@@ -13,24 +13,25 @@ struct AthleteGameView: View {
 //    var secondAthlete: Athlete
     
     var body: some View {
-        VStack {
-            CustomFont(text: "JUL 26 - 7 pm", fontSize: 17)
-                .padding(.bottom, 5)
-            
-            HStack {
-                AthleteMiniPreview()
+        ZStack {
+            BackgroundRectangle(width: 180, height: 140, color: Color(red: 240 / 255, green: 240 / 255, blue: 240 / 255))
+        
+            VStack {
+                CustomFont(text: "JUL 26 - 7 pm", fontSize: 15)
+                    .padding(.bottom, 5)
                 
-                Text("X")
-                    .padding(10)
-                
-                AthleteMiniPreview()
+                HStack {
+                    AthleteMiniPreview()
+                    
+                    Text("X")
+                        .padding(10)
+                    
+                    AthleteMiniPreview()
+                }
+   
             }
+            .padding()
         }
-        .frame(width: 140, height: 100, alignment: .center)
-        .padding(25)
-        .background(Color.init(red: 240.0, green: 240.0, blue: 240.0))
-        .cornerRadius(14)
-        .shadow(radius: 4)
     }
 }
 
