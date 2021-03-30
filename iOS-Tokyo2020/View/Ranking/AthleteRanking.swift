@@ -30,9 +30,14 @@ struct AthleteRanking: View {
                     }
                     
                     CustomFont(text: "Swimmer", fontSize: 12, fontWeight: .thin)
+                        .padding(.top, -5)
                     
                     HStack {
+                        MedalCounter(medal: "GoldMedal", numberOfWins: 23)
                         
+                        MedalCounter(medal: "SilverMedal", numberOfWins: 3)
+                        
+                        MedalCounter(medal: "BronzeMedal", numberOfWins: 2)
                     }
                 }
             }
