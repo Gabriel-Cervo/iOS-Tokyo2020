@@ -23,7 +23,7 @@ struct ResultsView: View {
         .padding(25)
         .background(Color.init(red: 240.0, green: 240.0, blue: 240.0))
         .cornerRadius(20)
-        .shadow(radius: 5)
+        .shadow(radius: 4)
     }
 }
 
