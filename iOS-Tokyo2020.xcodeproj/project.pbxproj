@@ -18,7 +18,6 @@
 		84E20258261252C5004B709C /* Medal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E20257261252C5004B709C /* Medal.swift */; };
 		84E2025B2612533B004B709C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2025A2612533B004B709C /* News.swift */; };
 		84E2025E261256E0004B709C /* Olympic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2025D261256E0004B709C /* Olympic.swift */; };
-		B2C409CD26125FAA0001E6D7 /* circleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C409CC26125FAA0001E6D7 /* circleView.swift */; };
 		B2C409D0261260EC0001E6D7 /* feedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C409CF261260EC0001E6D7 /* feedView.swift */; };
 		B2C409D7261275570001E6D7 /* HappeningNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C409D6261275570001E6D7 /* HappeningNow.swift */; };
 		B2C409DA26135E2E0001E6D7 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C409D926135E2E0001E6D7 /* NewsView.swift */; };
@@ -40,7 +39,6 @@
 		84E20257261252C5004B709C /* Medal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medal.swift; sourceTree = "<group>"; };
 		84E2025A2612533B004B709C /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		84E2025D261256E0004B709C /* Olympic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olympic.swift; sourceTree = "<group>"; };
-		B2C409CC26125FAA0001E6D7 /* circleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleView.swift; sourceTree = "<group>"; };
 		B2C409CF261260EC0001E6D7 /* feedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedView.swift; sourceTree = "<group>"; };
 		B2C409D6261275570001E6D7 /* HappeningNow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappeningNow.swift; sourceTree = "<group>"; };
 		B2C409D926135E2E0001E6D7 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
@@ -112,14 +110,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		B2C409CB26125F9A0001E6D7 /* View */ = {
+		B2B78BC62614E44D00925A8A /* FeedHome */ = {
 			isa = PBXGroup;
 			children = (
-				B2C409CC26125FAA0001E6D7 /* circleView.swift */,
 				B2C409CF261260EC0001E6D7 /* feedView.swift */,
 				B2C409E32613AEEE0001E6D7 /* feedEntireView.swift */,
 				B2C409D6261275570001E6D7 /* HappeningNow.swift */,
 				B2C409D926135E2E0001E6D7 /* NewsView.swift */,
+			);
+			path = FeedHome;
+			sourceTree = "<group>";
+		};
+		B2C409CB26125F9A0001E6D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2B78BC62614E44D00925A8A /* FeedHome */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,7 +207,6 @@
 				84E2025E261256E0004B709C /* Olympic.swift in Sources */,
 				84E2024A26124F94004B709C /* Sport.swift in Sources */,
 				B2C409DA26135E2E0001E6D7 /* NewsView.swift in Sources */,
-				B2C409CD26125FAA0001E6D7 /* circleView.swift in Sources */,
 				B2C409E42613AEEE0001E6D7 /* feedEntireView.swift in Sources */,
 				84E2024E26125033004B709C /* Team.swift in Sources */,
 				B2C409D0261260EC0001E6D7 /* feedView.swift in Sources */,
