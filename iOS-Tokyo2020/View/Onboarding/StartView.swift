@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Startview: View {
+    @StateObject var tabBarRouter = TabBarRouter()
+
+    
     var body: some View {
         VStack {
             Image ("logo")
@@ -34,10 +37,7 @@ struct Startview: View {
                 .padding(10)
                 .font(.system(size: 15))
             
-            Button(action: {
-                print("Button Tapped")
-                
-            }) {
+            NavigationLink(destination: PrincipalView(tabBarRouter: tabBarRouter)) {
                 Text("START")
                     .font(.system(size: 12))
                     .foregroundColor(.white)
