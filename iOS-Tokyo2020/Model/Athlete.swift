@@ -10,6 +10,7 @@ import SwiftUI
 
 struct Athlete {
     let name: String
+    let imageName: String
     let yearsParticipated: Olympic
     let sport: Sport
     let team: Team
@@ -19,6 +20,6 @@ struct Athlete {
     let news: [SportNews]
     
     var image: Image {
-        Image(name)
+        Image(imageName)
     }
 }

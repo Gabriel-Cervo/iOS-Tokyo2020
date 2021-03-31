@@ -10,11 +10,12 @@ import SwiftUI
 
 struct Team {
     let name: String
+    let iconName: String
     let medals: [Medal]
     let athletes: [Athlete]
     var games: [Game]
     
     var icon: Image {
-        Image(name)
+        Image(iconName)
     }
 }
