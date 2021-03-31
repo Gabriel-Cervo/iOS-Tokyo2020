@@ -11,7 +11,6 @@ import SwiftUI
 protocol News {
     var title: String { get }
     var content: String { get }
-    
     var image: Image { get }
 }
 
