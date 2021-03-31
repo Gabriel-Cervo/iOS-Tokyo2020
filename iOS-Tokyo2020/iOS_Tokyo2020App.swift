@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct iOS_Tokyo2020App: App {
+    @StateObject var tabBarRouter = TabBarRouter()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(tabBarRouter: tabBarRouter)
         }
     }
 }
