@@ -112,6 +112,9 @@
 		8442E0E226126CC500F14374 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				845D56212614E65500F56E81 /* CircleView.swift */,
+				845D56102614E65500F56E81 /* BackgroundRectangle.swift */,
+				845D56462614EB1900F56E81 /* SectionTitle.swift */,
 				8442E0E926126CEF00F14374 /* CustomFont.swift */,
 			);
 			path = Shared;
@@ -122,10 +125,8 @@
 			children = (
 				845D56052614E65500F56E81 /* Ranking */,
 				845D560D2614E65500F56E81 /* Schedule */,
-				845D56102614E65500F56E81 /* BackgroundRectangle.swift */,
 				845D56112614E65500F56E81 /* FeedHome */,
 				845D56162614E65500F56E81 /* SportDetails */,
-				845D56212614E65500F56E81 /* CircleView.swift */,
 				845D56222614E65500F56E81 /* Athlete */,
 			);
 			path = View;
@@ -150,7 +151,6 @@
 			children = (
 				845D560E2614E65500F56E81 /* Schedule.swift */,
 				845D560F2614E65500F56E81 /* ScheduleList.swift */,
-				845D56462614EB1900F56E81 /* SectionTitle.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";

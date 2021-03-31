@@ -60,23 +60,13 @@ struct AthleteDetail: View {
                 }
             }
             
-            HStack{
-                Text("News")
-                    .font(.headline)
-                    .fontWeight(.bold)
-                Spacer()
-            }.padding(.leading, 40)
+            SectionTitle(title: "News")
             .padding(.top, 10)
             .padding(.bottom, 7)
             
             AthleteNewsView(news: news)
             
-            HStack{
-                Text("Wins")
-                    .font(.headline)
-                    .fontWeight(.bold)
-                Spacer()
-            }.padding(.leading, 40)
+            SectionTitle(title: "Wins")
             .padding(.top, 10)
             .padding(.bottom, 7)
             

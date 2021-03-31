@@ -25,19 +25,24 @@ struct AthleteNewsView: View {
                             .brightness(-0.7)
                             .saturation(1.3)
                             .contrast(0.45)
+                        
                         VStack {
                             Text(new.title)
                                 .font(.caption)
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
+                            
                             Text(new.content)
                                 .font(.caption2)
                                 .fontWeight(.light)
                                 .foregroundColor(Color.white)
                                 .lineLimit(2)
-                        }.padding(.bottom, -35).frame(width: 280, height: 80, alignment: .bottomLeading)
-                    }.padding(.leading, 20.0)
+                            
+                        }
+                        .padding(.bottom, -35).frame(width: 280, height: 80, alignment: .bottomLeading)
+                    }
+                    .padding(.leading, 20.0)
                 }
             }
             .padding(.leading)
