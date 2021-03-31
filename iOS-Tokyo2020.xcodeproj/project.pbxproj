@@ -37,6 +37,9 @@
 		845D563F2614E65600F56E81 /* AthleteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D56242614E65500F56E81 /* AthleteDetail.swift */; };
 		845D56442614E9D400F56E81 /* FeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D56432614E9D400F56E81 /* FeedImage.swift */; };
 		845D56472614EB1900F56E81 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D56462614EB1900F56E81 /* SectionTitle.swift */; };
+		845D56502615089500F56E81 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D564F2615089500F56E81 /* StartView.swift */; };
+		845D5653261508A000F56E81 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D5652261508A000F56E81 /* LoginView.swift */; };
+		845D5656261508A900F56E81 /* DestinationPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D5655261508A900F56E81 /* DestinationPageView.swift */; };
 		84E2023326124973004B709C /* iOS_Tokyo2020App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2023226124973004B709C /* iOS_Tokyo2020App.swift */; };
 		84E2023526124973004B709C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2023426124973004B709C /* ContentView.swift */; };
 		84E2023726124974004B709C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E2023626124974004B709C /* Assets.xcassets */; };
@@ -82,6 +85,9 @@
 		845D56242614E65500F56E81 /* AthleteDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteDetail.swift; sourceTree = "<group>"; };
 		845D56432614E9D400F56E81 /* FeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImage.swift; sourceTree = "<group>"; };
 		845D56462614EB1900F56E81 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
+		845D564F2615089500F56E81 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		845D5652261508A000F56E81 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		845D5655261508A900F56E81 /* DestinationPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationPageView.swift; sourceTree = "<group>"; };
 		84E2022F26124973004B709C /* iOS-Tokyo2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Tokyo2020.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E2023226124973004B709C /* iOS_Tokyo2020App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Tokyo2020App.swift; sourceTree = "<group>"; };
 		84E2023426124973004B709C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -123,6 +129,7 @@
 		845D56042614E65500F56E81 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				845D564E2615088700F56E81 /* Onboarding */,
 				845D56052614E65500F56E81 /* Ranking */,
 				845D560D2614E65500F56E81 /* Schedule */,
 				845D56112614E65500F56E81 /* FeedHome */,
@@ -191,6 +198,16 @@
 				845D56242614E65500F56E81 /* AthleteDetail.swift */,
 			);
 			path = Athlete;
+			sourceTree = "<group>";
+		};
+		845D564E2615088700F56E81 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				845D564F2615089500F56E81 /* StartView.swift */,
+				845D5652261508A000F56E81 /* LoginView.swift */,
+				845D5655261508A900F56E81 /* DestinationPageView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		84E2022626124973004B709C = {
@@ -337,11 +354,13 @@
 				84E2025E261256E0004B709C /* Olympic.swift in Sources */,
 				845D56262614E65600F56E81 /* RankingView.swift in Sources */,
 				845D56472614EB1900F56E81 /* SectionTitle.swift in Sources */,
+				845D5656261508A900F56E81 /* DestinationPageView.swift in Sources */,
 				845D563A2614E65600F56E81 /* SportImageView.swift in Sources */,
 				84E2024A26124F94004B709C /* Sport.swift in Sources */,
 				845D56272614E65600F56E81 /* AthleteRankingRow.swift in Sources */,
 				845D56392614E65600F56E81 /* SportDetailsContent.swift in Sources */,
 				8442E0EA26126CEF00F14374 /* CustomFont.swift in Sources */,
+				845D56502615089500F56E81 /* StartView.swift in Sources */,
 				845D56252614E65500F56E81 /* AthleteRanking.swift in Sources */,
 				845D563B2614E65600F56E81 /* NextGames.swift in Sources */,
 				84E2024E26125033004B709C /* Team.swift in Sources */,
@@ -351,6 +370,7 @@
 				845D563C2614E65600F56E81 /* AthleteMiniPreview.swift in Sources */,
 				845D56382614E65600F56E81 /* FeaturedAthletesView.swift in Sources */,
 				845D562C2614E65600F56E81 /* Schedule.swift in Sources */,
+				845D5653261508A000F56E81 /* LoginView.swift in Sources */,
 				845D56322614E65600F56E81 /* feedView.swift in Sources */,
 				845D56442614E9D400F56E81 /* FeedImage.swift in Sources */,
 				845D56342614E65600F56E81 /* SportView.swift in Sources */,
