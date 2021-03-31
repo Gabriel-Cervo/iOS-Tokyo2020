@@ -11,9 +11,7 @@ struct Schedule: View {
     var body: some View {
         ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false) {
             ZStack {
-                Text("SCHEDULE")
-                    .font(.title)
-                    .fontWeight(.bold)
+                CustomFont(text: "SCHEDULE", fontSize: 28, fontWeight: .bold)
                 
                 HStack {
                     Spacer()
@@ -25,28 +23,19 @@ struct Schedule: View {
                         
                         Image(systemName: "calendar")
                     }
-                }.padding(.trailing, 40)
+                }
+                .padding(.trailing, 40)
                     
             }
             .padding(.vertical)
             
-            HStack {
-                Text("GOLF")
-                    .font(.headline)
-                    .padding(.leading, 42)
-                Spacer()
-            }
+            SectionTitle(title: "GOLF")
             
             ScheduleList()
             ScheduleList()
             ScheduleList()
             
-            HStack {
-                Text("GOLF")
-                    .font(.headline)
-                    .padding(.leading, 42)
-                Spacer()
-            }
+            SectionTitle(title: "GOLF")
             
             ScheduleList()
             ScheduleList()

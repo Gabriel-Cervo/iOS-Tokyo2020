@@ -14,7 +14,7 @@ struct CustomFont: View {
     
     var body: some View {
         Text(text)
-            .font(.custom("SF Compact Display", size: CGFloat(fontSize)))
+            .font(.system(size: CGFloat(fontSize)))
             .fontWeight(fontWeight ?? .light)
     }
 }
