@@ -14,6 +14,8 @@ struct SportImageView: View {
         image
             .resizable()
             .aspectRatio(contentMode: .fill)
+            .border(Color.gray, width: 1)
+
             .frame(height: 205, alignment: .center)
     }
 }

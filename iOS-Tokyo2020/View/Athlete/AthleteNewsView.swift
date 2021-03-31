@@ -16,15 +16,23 @@ struct AthleteNewsView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(news, id: \.title){ new in
-                    ZStack{
-                        Image(new.title)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 305, height: 165, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            .cornerRadius(20)
-                            .brightness(-0.7)
-                            .saturation(1.3)
-                            .contrast(0.45)
+                    ZStack {
+                        
+                        ZStack {
+                            Image(new.title)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .cornerRadius(20)
+                         
+                            RoundedRectangle(cornerRadius: 0, style: .continuous)
+                                .fill(Color(red: 240 / 255, green: 238 / 255, blue: 239 / 255))
+                                .opacity(0.2)
+                                .background((LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .top, endPoint: .bottom)))
+                                .cornerRadius(14)
+                        }
+                        .frame(width: 305, height: 165)
+
+                        
                         
                         VStack {
                             Text(new.title)

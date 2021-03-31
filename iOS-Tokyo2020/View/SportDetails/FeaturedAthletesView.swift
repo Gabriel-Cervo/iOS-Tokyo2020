@@ -21,11 +21,30 @@ struct FeaturedAthletes: View {
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    AthletePreview()
-                    AthletePreview()
-                    AthletePreview()
-                    AthletePreview()
-                    AthletePreview()
+                    NavigationLink(destination: AthleteDetail()) {
+                        AthletePreview()
+                    }
+                    .foregroundColor(.black)
+                    
+                    NavigationLink(destination: AthleteDetail()) {
+                        AthletePreview()
+                    }
+                    .foregroundColor(.black)
+                    
+                    NavigationLink(destination: AthleteDetail()) {
+                        AthletePreview()
+                    }
+                    .foregroundColor(.black)
+                    
+                    NavigationLink(destination: AthleteDetail()) {
+                        AthletePreview()
+                    }
+                    .foregroundColor(.black)
+                    
+                    NavigationLink(destination: AthleteDetail()) {
+                        AthletePreview()
+                    }
+                    .foregroundColor(.black)
 
                 }
             }

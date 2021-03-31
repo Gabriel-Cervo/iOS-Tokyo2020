@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         GeometryReader { geometry in
             
-            NavigationView {
+            NavigationView {    
                 VStack {
                     Spacer()
                     switch tabBarRouter.currentPage {

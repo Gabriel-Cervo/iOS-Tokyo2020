@@ -13,30 +13,43 @@ struct AthleteRankingRow: View {
             NavigationLink(destination: AthleteDetail()) {
                 AthleteRanking()
             }
+            .foregroundColor(.black)
             
             NavigationLink(destination: AthleteDetail()) {
                 AthleteRanking()
             }
+            .foregroundColor(.black)
+
             
             NavigationLink(destination: AthleteDetail()) {
                 AthleteRanking()
             }
+            .foregroundColor(.black)
+
             
             NavigationLink(destination: AthleteDetail()) {
                 AthleteRanking()
             }
+            .foregroundColor(.black)
+
             
             NavigationLink(destination: AthleteDetail()) {
                 AthleteRanking()
             }
+            .foregroundColor(.black)
+
             
             NavigationLink(destination: AthleteDetail()) {
                 AthleteRanking()
             }
+            .foregroundColor(.black)
+
             
             NavigationLink(destination: AthleteDetail()) {
                 AthleteRanking()
             }
+            .foregroundColor(.black)
+
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)

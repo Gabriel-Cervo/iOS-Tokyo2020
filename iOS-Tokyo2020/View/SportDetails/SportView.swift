@@ -12,14 +12,19 @@ struct SportView: View {
         ScrollView {
             VStack {
                 SportImageView(image: Image("1200px-Flag_of_the_Czech_Republic.svg"))
+                    .padding(.top, 20)
                 
                 SportDetailsContent()
                     .padding(20)
             }
         }
-        .navigationBarTitle("TENNIS")
         .navigationBarHidden(false)
-        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                CustomFont(text: "TENNIS", fontSize: 30, fontWeight: .heavy)
+                    .padding(.top, 10)
+            }
+        }
     }
 }
 
