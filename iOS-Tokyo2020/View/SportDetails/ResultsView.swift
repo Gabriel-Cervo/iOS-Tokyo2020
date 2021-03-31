@@ -13,7 +13,7 @@ struct ResultsView: View {
             BackgroundRectangle(width: 180, height: 140, color: Color(.white))
             
             VStack {
-                CustomFont(text: "SINGLES WOMAN", fontSize: 14, fontWeight: .heavy)
+                CustomFont(text: "SINGLES WOMAN", fontSize: 14, fontWeight: .semibold)
                     .padding(.bottom, 10)
                 
                 HStack {

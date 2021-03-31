@@ -11,7 +11,7 @@ struct SportResults: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                CustomFont(text: "Results", fontSize: 20, fontWeight: .heavy)
+                CustomFont(text: "Results", fontSize: 20, fontWeight: .semibold)
                     
                 Spacer()
             }

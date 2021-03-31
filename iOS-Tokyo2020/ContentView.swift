@@ -11,7 +11,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @StateObject var tabBarRouter: TabBarRouter
     
     var body: some View {

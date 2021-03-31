@@ -11,7 +11,7 @@ struct FeaturedAthletes: View {
     var body: some View {
         VStack {
             HStack(spacing: 20) {
-                CustomFont(text: "Featured Athletes", fontSize: 20, fontWeight: .heavy)
+                CustomFont(text: "Featured Athletes", fontSize: 20, fontWeight: .semibold)
                 
                 Spacer()
                 
