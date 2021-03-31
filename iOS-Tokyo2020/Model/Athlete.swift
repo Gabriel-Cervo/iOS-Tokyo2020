@@ -16,7 +16,7 @@ struct Athlete {
     let modalities: [String]
     let individualMedals: [Medal]
     let games: [Game]
-    let news: [AthleteNews]
+    let news: [SportNews]
     
     var image: Image {
         Image(name)

@@ -16,7 +16,7 @@ enum SportType {
 struct Sport {
     let color: Color
     let name: String
-    let gamesSchedule: Date
+    let gamesSchedule: [Game]
     let modalities: [String]
     let sportType: SportType
     let sliderImages: [Image]
@@ -27,3 +27,6 @@ struct Sport {
         Image(name)
     }
 }
+
+
+
