@@ -12,7 +12,7 @@ struct SportView: View {
         ScrollView {
             VStack {
                 SportImageView(image: Image("1200px-Flag_of_the_Czech_Republic.svg"))
-                    .padding(.top, 20)
+                    .padding(.top, 10)
                 
                 SportDetailsContent()
                     .padding(20)
@@ -21,8 +21,9 @@ struct SportView: View {
         .navigationBarHidden(false)
         .toolbar {
             ToolbarItem(placement: .principal) {
-                CustomFont(text: "TENNIS", fontSize: 30, fontWeight: .heavy)
+                CustomFont(text: "TENNIS", fontSize: 25, fontWeight: .semibold)
                     .padding(.top, 10)
+                    .padding(.bottom, 10)
             }
         }
     }
