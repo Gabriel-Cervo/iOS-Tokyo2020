@@ -19,13 +19,10 @@ struct ScheduleList: View {
     //var sport: Sport
     
     var body: some View {
-        ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false){
+        ScrollView(showsIndicators: false){
             
                 ZStack {
-                    Rectangle()
-                        .frame(width: 317, height: 122)
-                        .cornerRadius(14)
-                        .foregroundColor(Color(red: 147 / 255, green: 185 / 255, blue: 226 / 255))
+                    BackgroundRectangle(width: 317, height: 122, color: Color(red: 147 / 255, green: 185 / 255, blue: 226 / 255), shadow: 0)
                     
                     HStack {
                         ZStack {
@@ -34,35 +31,33 @@ struct ScheduleList: View {
                                 .cornerRadius(14)
                                 .foregroundColor(.white)
                             VStack(alignment: .leading) {
-                                Text("Friday")
-                                    .font(.caption)
-                                    .fontWeight(.light)
-                                Text("29")
-                                    .font(.largeTitle)
-                                    .fontWeight(.semibold)
-                                Text("JULY")
-                                    .font(.headline)
-                                    .fontWeight(.semibold)
+                                CustomFont(text: "Friday", fontSize: 12, fontWeight: .light)
+                                    .foregroundColor(.secondary)
+                                
+                                CustomFont(text: "29", fontSize: 38, fontWeight: .heavy)
+                                
+                                CustomFont(text: "JULY", fontSize: 18, fontWeight: .heavy)
                                     .padding(.top, -15)
                             }
                             .padding(.trailing)
                         }
                         
                         VStack(alignment: .leading) {
-                            Text("7:30 - 15:30")
-                                .font(.caption2)
-                                .fontWeight(.thin)
+                            CustomFont(text: "7:30 - 15:30", fontSize: 12, fontWeight: .thin)
+                                .foregroundColor(.secondary)
                                 .padding(.bottom, 1)
-                            Text("Men's Individual")
-                                .fontWeight(.bold)
-                            Text("Stroke Play Round 1")
-                                .fontWeight(.bold)
+                            
+                            CustomFont(text: "Men's Individual", fontSize: 18, fontWeight: .bold)
+
+                            CustomFont(text: "Stroke Play Round 1", fontSize: 18, fontWeight: .heavy)
                                 .padding(.bottom)
                         }
                         
                         Spacer()
-                    }.frame(width: 281, height: 100)
-                }.padding(.vertical, 5)
+                    }
+                    .frame(width: 281, height: 100)
+                }
+                .padding(.vertical, 5)
             }
         }
     }

@@ -15,9 +15,7 @@ struct feedView: View {
     
     var body: some View {
         VStack(alignment:.leading, spacing:8) {
-            Text("Sports")
-                .font(.system(size:18))
-                .fontWeight(.semibold)
+            CustomFont(text: "Sports", fontSize: 18, fontWeight: .heavy)
                 .foregroundColor(Color(red: 32 / 255, green: 43 / 255, blue: 90 / 255))
             
             ScrollView( .horizontal, showsIndicators:false) {
