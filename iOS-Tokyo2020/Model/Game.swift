@@ -12,6 +12,7 @@ protocol Game {
     var date: Date { get }
     var score: [Int] { get set }
     var description: String { get }
+    var duration: Int { get }
 }
 
 struct TeamGame: Game {
@@ -20,6 +21,7 @@ struct TeamGame: Game {
     let date: Date
     let description: String
     var score: [Int]
+    var duration: Int
 }
 
 struct IndividualGame: Game {
@@ -28,4 +30,5 @@ struct IndividualGame: Game {
     let date: Date
     let description: String
     var score: [Int]
+    var duration: Int
 }
