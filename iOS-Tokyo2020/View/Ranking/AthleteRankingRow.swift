@@ -10,15 +10,36 @@ import SwiftUI
 struct AthleteRankingRow: View {
     var body: some View {
         VStack(spacing: 30) {
-            AthleteRanking()
-            AthleteRanking()
-            AthleteRanking()
-            AthleteRanking()
-            AthleteRanking()
-            AthleteRanking()
-            AthleteRanking()
-
+            NavigationLink(destination: AthleteDetail()) {
+                AthleteRanking()
+            }
+            
+            NavigationLink(destination: AthleteDetail()) {
+                AthleteRanking()
+            }
+            
+            NavigationLink(destination: AthleteDetail()) {
+                AthleteRanking()
+            }
+            
+            NavigationLink(destination: AthleteDetail()) {
+                AthleteRanking()
+            }
+            
+            NavigationLink(destination: AthleteDetail()) {
+                AthleteRanking()
+            }
+            
+            NavigationLink(destination: AthleteDetail()) {
+                AthleteRanking()
+            }
+            
+            NavigationLink(destination: AthleteDetail()) {
+                AthleteRanking()
+            }
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
 }
 

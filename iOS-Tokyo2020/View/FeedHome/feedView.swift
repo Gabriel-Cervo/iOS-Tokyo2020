@@ -20,8 +20,11 @@ struct feedView: View {
             
             ScrollView( .horizontal, showsIndicators:false) {
                 HStack {
-                    FeedImage(imageName: "2018-10-14-Tennis-Womens-Singles-1")
-                        .foregroundColor(.blue)
+                    
+                    NavigationLink(destination: SportView()) {
+                        FeedImage(imageName: "2018-10-14-Tennis-Womens-Singles-1")
+                            .foregroundColor(.blue)
+                    }
                     
                     FeedImage(imageName: "21-08-2016-Basketball-7")
                     

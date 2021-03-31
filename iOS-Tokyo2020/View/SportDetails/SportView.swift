@@ -17,6 +17,9 @@ struct SportView: View {
                     .padding(20)
             }
         }
+        .navigationBarTitle("TENNIS")
+        .navigationBarHidden(false)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

@@ -11,7 +11,7 @@ struct AthleteDetail: View {
     //var athlete: Athlete
     
     var body: some View {
-        ScrollView(showsIndicators: false){
+        ScrollView(showsIndicators: false) {
             Image("tennisCapa")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
@@ -77,6 +77,10 @@ struct AthleteDetail: View {
             }.background(RoundedRectangle(cornerRadius: 20).fill(Color.white).shadow(radius: 8))
             
         }
+        .navigationBarTitle("Athlete Details")
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(false)
+        .navigationBarBackButtonHidden(false)
     }
 }
 
