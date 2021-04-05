@@ -26,7 +26,7 @@ struct HappeningNow: View {
                         VStack(alignment:.leading) {
                             HStack(spacing:147) {
                                 Text("Basketball")
-                                    .fontWeight(.semibold)//semibold ??? ou medium??
+                                    .fontWeight(.semibold)
                                     .font(.system(size:18))
                                 Text("86'")
                                     .font(.system(size:12))
@@ -63,10 +63,10 @@ struct HappeningNow: View {
                             .frame(width: 297, height: 139)
                         VStack(alignment:.leading) {
                             HStack(spacing:147) {
-                                Text("Basketball")
-                                    .fontWeight(.semibold)//semibold ??? ou medium??
+                                Text("Soccer")
+                                    .fontWeight(.semibold)
                                     .font(.system(size:18))
-                                Text("86'")
+                                Text("23'")
                                     .font(.system(size:12))
                             }
                             HStack(spacing:16) {
@@ -77,11 +77,11 @@ struct HappeningNow: View {
                                     Text("Canada")
                                         .font(.system(size:11))
                                 }
-                                Text("2")
+                                Text("0")
                                     .font(.system(size:40))
                                 Text("x")
                                     .font(.system(size:18))
-                                Text("0")
+                                Text("1")
                                     .font(.system(size:40))
                                 
                                 VStack {
