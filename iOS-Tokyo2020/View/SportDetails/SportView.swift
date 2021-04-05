@@ -12,7 +12,7 @@ struct SportView: View {
         ScrollView {
             VStack {
                 SportImageView(image: Image("Tennis-banner"))
-                    .padding(.top, 10)
+                    .padding(.top, -20)
                 
                 SportDetailsContent()
                     .padding(.horizontal, 20)
