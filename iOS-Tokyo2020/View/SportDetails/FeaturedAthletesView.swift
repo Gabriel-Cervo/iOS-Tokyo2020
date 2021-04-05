@@ -22,30 +22,29 @@ struct FeaturedAthletes: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     NavigationLink(destination: AthleteDetail()) {
-                        AthletePreview()
+                        AthletePreview(athleteName: "Serena Williams", athleteImageName: "serena-williams-promo-e1569012559666", countryImageName: "Bandeira-dos-Estados-Unidos-2000px", countryAbbreviation: "USA")
                     }
                     .foregroundColor(.black)
                     
                     NavigationLink(destination: AthleteDetail()) {
-                        AthletePreview()
+                        AthletePreview(athleteName: "Rafael Nadal", athleteImageName: "20190116-nadal-ebden-day-3-009_g_fixed_big", countryImageName: "significado-e-origem-da-bandeira-da-espanha-1-1200x675", countryAbbreviation: "ESP")
                     }
                     .foregroundColor(.black)
                     
                     NavigationLink(destination: AthleteDetail()) {
-                        AthletePreview()
+                        AthletePreview(athleteName: "Andy Murray", athleteImageName: "x4dwqfx5lne6cg78jkw3", countryImageName: "290px-Flag_of_the_United_Kingdom.svg", countryAbbreviation: "GBR")
                     }
                     .foregroundColor(.black)
                     
                     NavigationLink(destination: AthleteDetail()) {
-                        AthletePreview()
+                        AthletePreview(athleteName: "Monica Puig", athleteImageName: "monica-puig_1024-768", countryImageName: "1200px-Flag_of_Puerto_Rico.svg", countryAbbreviation: "PUR")
                     }
                     .foregroundColor(.black)
                     
                     NavigationLink(destination: AthleteDetail()) {
-                        AthletePreview()
+                        AthletePreview(athleteName: "Andy Murray", athleteImageName: "x4dwqfx5lne6cg78jkw3", countryImageName: "290px-Flag_of_the_United_Kingdom.svg", countryAbbreviation: "GBR")
                     }
                     .foregroundColor(.black)
-
                 }
             }
         }
