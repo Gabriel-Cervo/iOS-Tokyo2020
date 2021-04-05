@@ -71,7 +71,7 @@ struct DestinationPageView: View {
                     .frame(width: 95, height: 39, alignment: .center)
                     .background(Color("Color1"))
                     .cornerRadius(10)
-                    .padding(.top, 70)
+                    .padding(.top, 15)
                     .padding(.bottom, 40)
             }
             .navigationBarTitle("")

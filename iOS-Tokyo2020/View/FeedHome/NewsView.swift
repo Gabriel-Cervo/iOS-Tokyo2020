@@ -36,16 +36,18 @@ struct NewsView: View {
                     }
                     VStack() {
                         Text("Which athletes are qualified for the Tokyo Olympics?")
-                            .font(.system(size:11))
+                            .font(.system(size:13))
                             .fontWeight(.semibold)
                             .foregroundColor(Color.white)
-                            .offset(y:60)
+                            .offset(y:80)
                         
                         Text("While we wait and see if Simon Biles, Noah Lyles and Katie Ledecky qualify for ...")
-                            .font(.system(size:7))
+                            .font(.system(size:12))
                             .foregroundColor(Color.white)
-                            .offset(y:60)
+                            .offset(y:85)
+                            .lineLimit(3)
                     }
+                    .frame(width: 360, height: 228)
                 }
                 ZStack {
                     ZStack {
@@ -63,16 +65,18 @@ struct NewsView: View {
                     }
                     VStack {
                         Text("Which athletes are qualified for the Tokyo Olympics?")
-                            .font(.system(size:11))
+                            .font(.system(size:13))
                             .fontWeight(.semibold)
                             .foregroundColor(Color.white)
-                            .offset(y:60)
+                            .offset(y:80)
                         
                         Text("While we wait and see if Simon Biles, Noah Lyles and Katie Ledecky qualify for ...")
-                            .font(.system(size:7))
+                            .font(.system(size:12))
                             .foregroundColor(Color.white)
-                            .offset(y:60)
+                            .offset(y:85)
+                            .lineLimit(3)
                     }
+                    .frame(width: 360, height: 228)
                 }
             }
         }
