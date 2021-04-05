@@ -16,9 +16,10 @@ protocol News {
 
 struct SportNews: News {
     let title: String
+    let imageName: String
     let content: String
     
     var image: Image {
-        Image(title)
+        Image(imageName)
     }
 }

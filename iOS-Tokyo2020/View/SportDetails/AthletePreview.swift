@@ -8,21 +8,26 @@
 import SwiftUI
 
 struct AthletePreview: View {
+    var athleteName: String
+    var athleteImageName: String
+    var countryImageName: String
+    var countryAbbreviation: String
+    
     var body: some View {
         VStack {
-            CircleImage(image: Image("x4dwqfx5lne6cg78jkw3"), height: 80, width: 80)
+            CircleImage(image: Image(athleteImageName), height: 80, width: 80)
             
-            Text("Andy Murray")
+            Text(athleteName)
                 .font(.subheadline)
                 .padding(.bottom, -5)
             
             HStack {
-                Image("Bandeira-dos-Estados-Unidos-2000px")
+                Image(countryImageName)
                     .resizable()
                     .frame(width: 20, height: 14)
                     .padding(.trailing, -5)
                 
-                CustomFont(text: "GBR", fontSize: 11)
+                CustomFont(text: countryAbbreviation, fontSize: 11)
             }
         }
     }
@@ -30,6 +35,6 @@ struct AthletePreview: View {
 
 struct AthletePreview_Previews: PreviewProvider {
     static var previews: some View {
-        AthletePreview()
+        AthletePreview(athleteName: "Andy Murray", athleteImageName: "x4dwqfx5lne6cg78jkw3", countryImageName: "Bandeira-dos-Estados-Unidos-2000px", countryAbbreviation: "GBR")
     }
 }

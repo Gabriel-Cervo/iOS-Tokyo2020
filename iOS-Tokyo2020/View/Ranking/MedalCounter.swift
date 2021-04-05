@@ -12,14 +12,16 @@ struct MedalCounter: View {
     var numberOfWins: Int
     
     var body: some View {
-        HStack {
-            Image(medal)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 10, height: 20)
-                .padding(.trailing, -2)
-            
-            CustomFont(text: "\(numberOfWins)", fontSize: 12, fontWeight: .thin)
+        if(numberOfWins > 0) {
+            HStack {
+                Image(medal)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 10, height: 20)
+                    .padding(.trailing, -2)
+                
+                CustomFont(text: "\(numberOfWins)", fontSize: 12, fontWeight: .thin)
+            }
         }
     }
 }

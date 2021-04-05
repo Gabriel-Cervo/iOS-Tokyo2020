@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-var news: [SportNews] = [SportNews(title: "Serena Williams all set for title defences in Rio", content: "It was back in 2000 in Sydney that sister act Venus and Serena Williams won the first of their three Olympic women’s doubles titles, with older sibling Venus"), SportNews(title: "Serena Williams all set for title defences in Rio", content: "It was back in 2000 in Sydney that sister act Venus and Serena Williams won the first of their three Olympic women’s doubles titles, with older sibling Venus"), SportNews(title: "Serena Williams all set for title defences in Rio", content: "It was back in 2000 in Sydney that sister act Venus and Serena Williams won the first of their three Olympic women’s doubles titles, with older sibling Venus")]
+var news: [SportNews] = [SportNews(title: "Serena Williams all set for title defences in Rio", imageName: "Serena Williams all set for title defences in Rio", content: "It was back in 2000 in Sydney that sister act Venus and Serena Williams won the first of their three Olympic women’s doubles titles, with older sibling Venus"), SportNews(title: "Serena Williams all set for title defences in Rio", imageName: "Serena Williams all set for title defences in Rio", content: "It was back in 2000 in Sydney that sister act Venus and Serena Williams won the first of their three Olympic women’s doubles titles, with older sibling Venus"), SportNews(title: "Serena Williams all set for title defences in Rio", imageName: "Serena Williams all set for title defences in Rio", content: "It was back in 2000 in Sydney that sister act Venus and Serena Williams won the first of their three Olympic women’s doubles titles, with older sibling Venus")]
 
 struct AthleteNewsView: View {
     var news: [SportNews]

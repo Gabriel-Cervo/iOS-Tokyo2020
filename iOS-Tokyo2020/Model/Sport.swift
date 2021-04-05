@@ -16,6 +16,7 @@ enum SportType {
 struct Sport {
     let color: Color
     let name: String
+    let iconName: String
     let gamesSchedule: [Game]
     let modalities: [String]
     let sportType: SportType
@@ -24,7 +25,7 @@ struct Sport {
     let teams: [Team]
     
     var icon: Image {
-        Image(name)
+        Image(iconName)
     }
 }
 
