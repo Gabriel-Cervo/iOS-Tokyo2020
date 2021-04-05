@@ -15,6 +15,7 @@ struct SportView: View {
                     .padding(.top, -20)
                 
                 SportDetailsContent()
+                    .padding(.top, -30)
                     .padding(.horizontal, 20)
                     .padding(.leading, 120)
             }

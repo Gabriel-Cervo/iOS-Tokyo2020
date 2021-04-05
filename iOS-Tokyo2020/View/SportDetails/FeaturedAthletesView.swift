@@ -27,7 +27,7 @@ struct FeaturedAthletes: View {
                     .foregroundColor(.black)
                     
                     NavigationLink(destination: AthleteDetail()) {
-                        AthletePreview(athleteName: "Rafael Nadal", athleteImageName: "20190116-nadal-ebden-day-3-009_g_fixed_big", countryImageName: "significado-e-origem-da-bandeira-da-espanha-1-1200x675.jpg", countryAbbreviation: "ESP")
+                        AthletePreview(athleteName: "Rafael Nadal", athleteImageName: "20190116-nadal-ebden-day-3-009_g_fixed_big", countryImageName: "espanha_flag", countryAbbreviation: "ESP")
                     }
                     .foregroundColor(.black)
                     

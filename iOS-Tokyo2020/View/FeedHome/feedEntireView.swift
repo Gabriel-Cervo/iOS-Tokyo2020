@@ -20,6 +20,7 @@ struct feedEntireView: View {
                 HappeningNow()
                     
                 NewsView()
+                   
             }
         }
     }

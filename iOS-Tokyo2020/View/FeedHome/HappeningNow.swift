@@ -50,7 +50,7 @@ struct HappeningNow: View {
                                     Image("Bandeira-dos-Estados-Unidos-2000px")
                                         .resizable()
                                         .frame(width:65, height: 47)
-                                    Text("Canada")
+                                    Text("USA")
                                         .font(.system(size:11))
                                 }
                             }
@@ -88,7 +88,7 @@ struct HappeningNow: View {
                                     Image("Bandeira-dos-Estados-Unidos-2000px")
                                         .resizable()
                                         .frame(width:65, height: 47)
-                                    Text("Canada")
+                                    Text("USA")
                                         .font(.system(size:11))
                                 }
                             }
