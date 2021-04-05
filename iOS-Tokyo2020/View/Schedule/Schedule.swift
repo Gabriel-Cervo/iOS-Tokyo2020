@@ -29,18 +29,24 @@ struct Schedule: View {
             }
             .padding(.vertical)
             
-            SectionTitle(title: "GOLF")
+            VStack {
+                SectionTitle(title: "GOLF")
             
-            ScheduleList()
-            ScheduleList()
-            ScheduleList()
             
-            SectionTitle(title: "GOLF")
+            ScheduleList(day: "29", month: "JULY", dayOfWeek: "Thursday", hour: "7:30 - 15:30", title1: "Men's Individual", title2: "Stroke Play Round 1", color: Color(red: 147 / 255, green: 185 / 255, blue: 226 / 255))
+            ScheduleList(day: "30", month: "JULY", dayOfWeek: "Friday", hour: "7:30 - 15:30", title1: "Men's Individual", title2: "Stroke Play Round 2", color: Color(red: 147 / 255, green: 185 / 255, blue: 226 / 255))
+            ScheduleList(day: "31", month: "JULY", dayOfWeek: "Saturday", hour: "7:30 - 15:30", title1: "Men's Individual", title2: "Stroke Play Round 3", color: Color(red: 147 / 255, green: 185 / 255, blue: 226 / 255))
             
-            ScheduleList()
-            ScheduleList()
-            ScheduleList()
-            ScheduleList()
+            SectionTitle(title: "JUDO")
+            
+            ScheduleList(day: "26", month: "JULY", dayOfWeek: "Friday", hour: "17:00 - 19:40", title1: "Women Semifinals", title2: " ", color: Color(red: 89 / 255, green: 180 / 255, blue: 102 / 255, opacity: 0.46))
+            ScheduleList(day: "28", month: "JULY", dayOfWeek: "Sunday", hour: "18:30 - 20:30", title1: "Women Semifinals", title2: " ", color: Color(red: 89 / 255, green: 180 / 255, blue: 102 / 255, opacity: 0.46))
+            
+            SectionTitle(title: "FOOTBALL")
+
+            ScheduleList(day: "02", month: "August", dayOfWeek: "Friday", hour: "17:00 - 18:45", title1: "Women Semifinals 1", title2: "Brasil x EUA", color: Color(red: 171 / 255, green: 169 / 255, blue: 76 / 255))
+            ScheduleList(day: "02", month: "August", dayOfWeek: "Friday", hour: "19:00 - 20:45", title1: "Women Semifinals 2", title2: "Germany X France", color: Color(red: 171 / 255, green: 169 / 255, blue: 76 / 255))
+            }
         }
     }
 }

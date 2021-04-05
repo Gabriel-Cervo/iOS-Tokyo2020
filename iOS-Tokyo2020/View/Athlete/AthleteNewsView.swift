@@ -30,7 +30,7 @@ struct AthleteNewsView: View {
                                 .background((LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .top, endPoint: .bottom)))
                                 .cornerRadius(14)
                         }
-                        .frame(width: 305, height: 165)
+                        .frame(width: 305, height: 175)
 
                         
                         

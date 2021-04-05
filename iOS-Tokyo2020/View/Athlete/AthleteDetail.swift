@@ -18,7 +18,7 @@ struct AthleteDetail: View {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .ignoresSafeArea(edges: .top)
-
+                    
                     
                     RoundedRectangle(cornerRadius: 0, style: .continuous)
                         .fill(Color(red: 240 / 255, green: 238 / 255, blue: 239 / 255))
@@ -27,12 +27,12 @@ struct AthleteDetail: View {
                         .cornerRadius(14)
                 }
                 .frame(width: .infinity, height: 90)
-
+                
                 
                 
                 CircleImage(image: Image("serena"), height: 159, width: 159)
-
-                    
+                
+                
                 HStack {
                     Text("SERENA WILLIAMS")
                         .font(.title3)
@@ -47,7 +47,7 @@ struct AthleteDetail: View {
                     Text("Tennis Player")
                         .font(.footnote)
                         .fontWeight(.thin)
-                    Image("Gold")
+                    Image("GoldMedal")
                         .resizable()
                         .frame(width: 15, height: 20)
                     Text("4")
@@ -70,19 +70,32 @@ struct AthleteDetail: View {
                 }
                 
                 SectionTitle(title: "News")
-                .padding(.top, 10)
-                .padding(.bottom, 7)
+                    .padding(.top, 10)
+                    .padding(.bottom, 7)
                 
                 AthleteNewsView(news: news)
                 
                 SectionTitle(title: "Wins")
-                .padding(.top, 10)
-                .padding(.bottom, 7)
+                    .padding(.top, 10)
+                    .padding(.bottom, 7)
                 
                 ZStack{
                     RoundedRectangle(cornerRadius: 20)
-                        .frame(width: 305, height: 194, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 305, height: 194, alignment: .center)
                         .foregroundColor(.white)
+                    
+                    VStack(alignment: .leading) {
+                        HStack{
+                            CustomFont(text: "Doubles Woman", fontSize: 10, fontWeight: .thin)
+                                .padding(.leading, 90)
+                            
+                            CustomFont(text: "Single Woman", fontSize: 10, fontWeight: .thin)
+                        }.padding(.top, -20)
+                        
+                        YearParticipation(title: "London 2012", Image1: "GoldMedal", Image2: "GoldMedal")
+                        YearParticipation(title: "Beijing 2008", Image1: "GoldMedal", Image2: " ")
+                        YearParticipation(title: "Sidney 2000", Image1: "GoldMedal", Image2: " ")
+                    }
                 }.background(RoundedRectangle(cornerRadius: 20).fill(Color.white).shadow(radius: 8))
             }
             .offset(y: -50)

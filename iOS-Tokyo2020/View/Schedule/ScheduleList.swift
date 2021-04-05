@@ -7,22 +7,20 @@
 
 import SwiftUI
 
-var game1: Game = IndividualGame(athletes: [], sport: golf, date: Date(), description: "Men's Individual Stroke Play Round 1", score: [], duration: 90)
-
-var game2: Game = IndividualGame(athletes: [], sport: golf, date: Date(), description: "Men's Individual Stroke Play Round 1", score: [], duration: 80)
-
-var game3: Game = IndividualGame(athletes: [], sport: golf, date: Date(), description: "Men's Individual Stroke Play Round 1", score: [], duration: 70)
-
-var golf: Sport = Sport(color: .blue, name: "Golf", gamesSchedule: [game1, game1, game1], modalities: [], sportType: .individual, sliderImages: [], athletes: [], teams: [])
-
 struct ScheduleList: View {
-    //var sport: Sport
+    var day: String
+    var month: String
+    var dayOfWeek: String
+    var hour: String
+    var title1: String
+    var title2: String
+    var color: Color
     
     var body: some View {
         ScrollView(showsIndicators: false){
             
                 ZStack {
-                    BackgroundRectangle(width: 317, height: 122, color: Color(red: 147 / 255, green: 185 / 255, blue: 226 / 255), shadow: 0)
+                    BackgroundRectangle(width: 317, height: 122, color: color, shadow: 0)
                     
                     HStack {
                         ZStack {
@@ -34,22 +32,22 @@ struct ScheduleList: View {
                                 CustomFont(text: "Friday", fontSize: 12, fontWeight: .light)
                                     .foregroundColor(.secondary)
                                 
-                                CustomFont(text: "29", fontSize: 38, fontWeight: .heavy)
+                                CustomFont(text: day, fontSize: 38, fontWeight: .bold)
                                 
-                                CustomFont(text: "JULY", fontSize: 18, fontWeight: .heavy)
+                                CustomFont(text: month, fontSize: 18, fontWeight: .bold)
                                     .padding(.top, -15)
                             }
                             .padding(.trailing)
                         }
                         
                         VStack(alignment: .leading) {
-                            CustomFont(text: "7:30 - 15:30", fontSize: 12, fontWeight: .thin)
+                            CustomFont(text: hour, fontSize: 12, fontWeight: .thin)
                                 .foregroundColor(.secondary)
                                 .padding(.bottom, 1)
                             
-                            CustomFont(text: "Men's Individual", fontSize: 18, fontWeight: .bold)
+                            CustomFont(text: title1, fontSize: 18, fontWeight: .semibold)
 
-                            CustomFont(text: "Stroke Play Round 1", fontSize: 18, fontWeight: .heavy)
+                            CustomFont(text: title2, fontSize: 18, fontWeight: .bold)
                                 .padding(.bottom)
                         }
                         
@@ -64,6 +62,6 @@ struct ScheduleList: View {
 
 struct ScheduleList_Previews: PreviewProvider {
     static var previews: some View {
-        ScheduleList()
+        ScheduleList(day: "29", month: "JULY", dayOfWeek: "Thursday", hour: "7:30 - 15:30", title1: "Men's Individual", title2: "Stroke Play Round 1", color: Color(red: 147 / 255, green: 185 / 255, blue: 226 / 255))
     }
 }
