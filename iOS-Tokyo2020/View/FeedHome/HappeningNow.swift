@@ -36,7 +36,7 @@ struct HappeningNow: View {
                                     Image("1280px-Flag_of_Canada.svg")
                                         .resizable()
                                         .frame(width:65, height: 47)
-                                    Text("Canada")
+                                    Text("CAN")
                                         .font(.system(size:11))
                                 }
                                 Text("2")
@@ -74,7 +74,7 @@ struct HappeningNow: View {
                                     Image("1280px-Flag_of_Canada.svg")
                                         .resizable()
                                         .frame(width:65, height: 47)
-                                    Text("Canada")
+                                    Text("CAN")
                                         .font(.system(size:11))
                                 }
                                 Text("0")
