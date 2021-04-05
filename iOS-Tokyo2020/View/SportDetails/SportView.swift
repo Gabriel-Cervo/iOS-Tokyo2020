@@ -11,11 +11,12 @@ struct SportView: View {
     var body: some View {
         ScrollView {
             VStack {
-                SportImageView(image: Image("1200px-Flag_of_the_Czech_Republic.svg"))
+                SportImageView(image: Image("Tennis-banner"))
                     .padding(.top, 10)
                 
                 SportDetailsContent()
-                    .padding(20)
+                    .padding(.horizontal, 20)
+                    .padding(.leading, 120)
             }
         }
         .navigationBarHidden(false)
