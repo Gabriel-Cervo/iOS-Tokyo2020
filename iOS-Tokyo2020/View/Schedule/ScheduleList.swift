@@ -13,7 +13,7 @@ var game2: Game = IndividualGame(athletes: [], sport: golf, date: Date(), descri
 
 var game3: Game = IndividualGame(athletes: [], sport: golf, date: Date(), description: "Men's Individual Stroke Play Round 1", score: [], duration: 70)
 
-var golf: Sport = Sport(color: .blue, name: "Golf", gamesSchedule: [game1, game1, game1], modalities: [], sportType: .individual, sliderImages: [], athletes: [], teams: [])
+var golf: Sport = Sport(color: .blue, name: "Golf", iconName: "Golf", gamesSchedule: [game1, game1, game1], modalities: [], sportType: .individual, sliderImages: [], athletes: [], teams: [])
 
 struct ScheduleList: View {
     //var sport: Sport
